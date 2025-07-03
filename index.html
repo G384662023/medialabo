@@ -44,10 +44,26 @@
 <p>ページの自動更新やアニメーションなど動きのあるページを実現するためにJavaScriptを使う。
 HTMLファイルとは別にJavaScriptファイルを作成する。HTMLのhead要素にscript要素を追加する。
 JavaScript には for 文の構文が様々ある。</p>
+<p>演習の成果<a href="kazuate.html">kazuate.html</a></p>
 
 <h3>第4回 DOM と JavaScript</h3>
+<p>ボタンを押したらページが変化する処理をJavaScriptプログラムとして記述する方法を学んだ。ボタンを押したらページが変化する処理をJavaScriptプログラムとして記述する方法を学んだ。
+DOMは1つの要素に1つのオブジェクトを対応させる働きがある。
+要素.textContent ... 要素のテキストを参照する
+要素.getAttribute(属性名) ... 要素の属性値を参照する
+input要素.value ... ユーザが設定した値を参照する
+DOM と JavaScript を組み合わせることによって、動きのあるWebページを実現できるようになる。</p>
+<p>演習の成果: <a href="practice-eventdom/tashizan.html">browser-intro.html</a></p>
 
 <h3>第5回 イベント処理</h3>
-
+printDom() 関数を作成し、データをコンソールではなくページ上に表示できるようにしました。
+createElement(要素名) ... 要素を新規作成
+要素1.insertAdjacentElement('beforeend', 要素2) ... 要素1の内部に要素2を配置
+要素1.insertAdjacentElement('afterend', 要素2) ... 要素1の直後に要素2を配置
+要素.setAttribute(属性名, 値) ... 要素の属性を設定
+要素.remove() ... 要素を削除
+要素の作り方
+要素のオブジェクトを新しく作成する、要素にテキストや属性を設定する、HTMLの中の要素を1つ検索する、新規要素をHTMLに配置する
+<p>演習の成果: <a href="practice-dom2/dom2-exercise.html">elements.html</a></p>
 </body>
 </html>

@@ -16,8 +16,49 @@ function print(data) {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  let div = document.createElement('div');
+  div.setAttribute('id', 'result');
 
+  document.body.appendChild(div);
+
+
+  let p = document.createElement('p');
+  p.textContent = "経度: " + data.coord.lon;
+  div.appendChild(p);
+
+  p = document.createElement('p');
+  p.textContent = "緯度: " + data.coord.lat;
+  div.appendChild(p);
+
+  p = document.createElement('p');
+  p.textContent = "天気: " + data.weather[0].description;
+  div.appendChild(p);
+
+  p = document.createElement('p');
+  p.textContent = "最低気温: " + data.main.temp_min;
+  div.appendChild(p);
+
+  p = document.createElement('p');
+  p.textContent = "最高気温: " + data.main.temp_max;
+  div.appendChild(p);
+
+  p = document.createElement('p');
+  p.textContent = "湿度: " + data.main.humidity;
+  div.appendChild(p);
+
+  p = document.createElement('p');
+  p.textContent = "風速: " + data.wind.speed;
+  div.appendChild(p);
+
+  p = document.createElement('p');
+  p.textContent = "風向: " + data.wind.deg;
+  div.appendChild(p);
+
+  p = document.createElement('p');
+  p.textContent = "都市名: " + data.name;
+  div.appendChild(p);
 }
+
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
