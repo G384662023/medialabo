@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>世界の天気（検索結果1件）</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
   <script src="weather.js" defer></script>
 </head>
 <body>
   <h1>世界の天気（検索結果1件）</h1>
-
+    <h1>都市idを入力してください</h1>
+    <input type="text" id="cityIdInput" placeholder="例: 1850147（東京）">
+    <p>以下のボタンを押すと，サーバに通信します．結果はコンソールに出力します．</p>
+    <button id="sendRequest">通信</button>
 </body>
 </html>
